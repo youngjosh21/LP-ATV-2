@@ -1,0 +1,50 @@
+// È O JOVEM JOSH!!!!!!!!!
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+
+
+// Exercicio 12:
+
+// Desenvolva um programa que solicite ao usuário uma quantidade de notas
+// e peça para digitar cada nota. O programa deve calcular e exibir a média das notas digitadas.
+// Utilize o for para repetir o processo de solicitação das notas.
+
+int main()
+{
+
+    float media;
+    float soma = 0;
+    char nome[5];
+    float n;
+    int i;
+
+    setlocale(LC_ALL, "Portuguese");
+    printf("Digite seu nome:\n");
+    scanf("%s", &nome);
+    for (i = 0; i < 3; i++)
+    {
+        printf("\nDigite a %dª nota:\n", i + 1);
+
+        scanf("%f", &n);
+        soma += n;
+    }
+    media = soma / 3;
+    printf("\nA sua media foi %.2f\n", media);
+
+
+    
+    
+
+
+
+   
+
+
+
+
+    return 0;
+}
