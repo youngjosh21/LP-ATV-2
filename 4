@@ -1,0 +1,37 @@
+// É O JOVEM JOSH!!!!!!!!!
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+
+// Exercício 4:
+//*Em um projeto de controle de acesso, crie um programa que solicite ao usuário sua idade e verifique se ele tem permissão
+// para acessar um determinado recurso. Se a idade for maior ou igual a 18,
+// exiba a mensagem "Acesso permitido". Caso contrário, exiba a mensagem "Acesso negado".
+
+
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    int idade;
+
+    printf("\nBEM VINDO\n");
+
+    printf("\ndigite sua idade para o acesso:\n");
+    scanf("%d", &idade);
+
+    if (idade >= 18)
+    {
+        printf("Acesso permitido!");
+    }
+    else
+    {
+        printf("Acesso Negado! Tente Novamente");
+    }
+
+    return 0;
+}
