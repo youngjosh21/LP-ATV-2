@@ -1,0 +1,41 @@
+// É O JOVEM JOSH!!!!!!!!!
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+// Exercício 5:
+//* você faz parte de uma equipe de desenvolvimento de software, desenvolva um programa que solicite ao usuário que escolha um idioma de preferência
+//(1 - Inglês, 2 - Espanhol, 3 - Francês). Com base na escolha do usuário, exiba a mensagem de boas-vindas
+// no idioma selecionado.Em um projeto de controle de acesso,
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    int idioma;
+
+    printf("\nBEM VINDO\n");
+    printf("\n para 1 -  inglês 2 - espanhol 3 - francês");
+
+    printf("\ndigite o idioma de sua preferência:\n");
+    scanf("%d", &idioma);
+    system("clear || cls");
+
+    switch (idioma)
+    {
+    case 1:
+        printf("Welcome!!!");
+        break;
+
+    case 2:
+        printf("bienvenida!!!");
+
+    case 3:
+        printf("accueillir!!!");
+    default:
+        break;
+    }
+    return 0;
+}
