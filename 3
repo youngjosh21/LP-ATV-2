@@ -1,0 +1,55 @@
+// É O JOVEM JOSH!!!!!!!!!
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+
+// Exercício 3:
+// Em um projeto de classificação de alunos, desenvolva um programa
+// que receba a nota de um aluno e determine sua classificação com base na seguinte tabela:
+//*  - Nota maior ou igual a 9: "Excelente"
+//- Nota entre 7 e 8.9: "Bom"
+//- Nota entre 5 e 6.9: "Razoável"
+//  - Nota menor que 5: "Insuficiente" */
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// professor Carlos, eu não sei aonde estou errando, aparentemente tudo correto, mas as msgs "Razoavel" e "Insuficientes" não aparecem.. só  Bom e Excelente que deu certo.
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    int nota;
+    printf("\nBEM VINDO A ESCOLA MUNDIAL!\n");
+
+    printf("\ndigite a nota do aluno: \n");
+    scanf("%d", &nota);
+
+    fflush(stdin);
+
+    if (nota >= 9)
+    {
+        printf("excelente!!!");
+    }
+    else if (nota < 9 && nota >= 7)
+    {
+        printf("Bom!!"); // daqui pra baixo só aparece "Bom!!" e eu n sei o pq :(
+    }
+    else if (nota < 7 && nota >= 5)
+    {
+
+        printf("Razoavel!");
+    }
+    else if (nota < 5)
+    {
+
+        printf("Insuficiente :( ");
+    }
+    else
+    {
+        printf("opção inválida");
+    }
+
+    return 0;
+}
