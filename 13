@@ -1,4 +1,4 @@
-// È O JOVEM JOSH!!!!!!!!!
+// Ãˆ O JOVEM JOSH!!!!!!!!!
 
 #include <stdio.h>
 #include <string.h>
@@ -8,7 +8,7 @@
 
 // Exercicio 13:
 
-// Crie um programa que solicite do usuário dois números inteiros e informe qual destes números é o maior e qual é o menor.
+// Crie um programa que solicite do usuÃ¡rio dois nÃºmeros inteiros e informe qual destes nÃºmeros Ã© o maior e qual Ã© o menor.
 
 int main()
 {
@@ -24,11 +24,11 @@ setlocale(LC_ALL ,  "Portuguese");
 
     if (numeroUm > numeroDois)
     {
-        printf("O primeiro numero é maior!\n e o segundo é menor!");
+        printf("O primeiro numero Ã© maior!\n e o segundo Ã© menor!");
     }
     else
     {
-        printf("O segundo numero é maior \n e o primeiro é menor!");
+        printf("O segundo numero Ã© maior \n e o primeiro Ã© menor!");
     }
 
     return 0;
