@@ -1,0 +1,45 @@
+// É O JOVEM JOSH!!!!!!!!!
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+
+// Exercício 7:
+//Em um projeto para um jogo, é necessário cria um menu, crie um programa que exiba um menu com opções (1 - Novo jogo, 2 - Carregar jogo, 3 - Configurações). 
+//Solicite ao usuário que escolha uma opção e, utilizando o switch case, execute a funcionalidade correspondente à opção escolhida 
+
+
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    int codigo;
+
+    printf("\n--------------------------MENU-----------------------\n");
+    printf("\n 1 -  Novo Jogo  2 - Carregar jogo   3 - Configurações");
+
+    printf("\nINICIO! O QUE VOCÊ QUER FAZER?\n");
+    scanf("%d", &codigo);
+    system("clear || cls");
+
+
+
+    switch (codigo)
+    {
+    case 1:
+        printf("Você escolheu: Novo Jogo!!! Começe a sua aventura!! ");
+        break;
+
+    case 2:
+        printf("Você escolheu: Carregar jogo!!! Comece de onde parou!!!");
+break;
+    case 3:
+        printf("Você escolheu: Configurações!!! \nCONFIGURAÇÕES:");
+    default:
+        break;
+    }
+    return 0;
+}
