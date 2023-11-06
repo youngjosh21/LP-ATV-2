@@ -1,0 +1,35 @@
+// È O JOVEM JOSH!!!!!!!!!
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+
+// Exercicio 13:
+
+// Crie um programa que solicite do usuário dois números inteiros e informe qual destes números é o maior e qual é o menor.
+
+int main()
+{
+    int numeroUm;
+    int numeroDois;
+setlocale(LC_ALL ,  "Portuguese");
+  
+    printf("digite dois numeros!\n");
+    printf("digite o primeiro numero:\n");
+    scanf ("%d", &numeroUm);
+        printf("digite o segundo numero:\n");
+    scanf ("%d", &numeroDois);
+
+    if (numeroUm > numeroDois)
+    {
+        printf("O primeiro numero é maior!\n e o segundo é menor!");
+    }
+    else
+    {
+        printf("O segundo numero é maior \n e o primeiro é menor!");
+    }
+
+    return 0;
+}
