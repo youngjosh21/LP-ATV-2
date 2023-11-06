@@ -1,0 +1,48 @@
+// É O JOVEM JOSH!!!!!!!!!
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+
+// Exercício 1:
+// você é um desenvolvedor de jogos e está
+/// trabalhando em um novo jogo de aventura.
+/// O jogo tem um sistema de clima que depende da temperatura externa.
+/// Se a temperatura for superior a 25 graus Celsius, o clima será ensolarado.
+////// Se a temperatura for inferior a 15 graus Celsius,
+/// o clima será chuvoso. Se a temperatura estiver
+/// entre 15 e 25 graus Celsius, o clima será nublado.
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    int temperatura;
+
+    printf("bem vindo ao jogo!\n");
+
+    printf("digite a temperatura: \n");
+    scanf("%d", &temperatura);
+
+
+
+    if (temperatura > 25)
+    {
+        printf("ensolarado");
+    }
+    else if (temperatura < 15)
+    {
+        printf("chuvoso");
+    }
+    else if (temperatura >= 15 || temperatura <= 25)
+    {
+        printf("nublado");
+    }
+
+    else
+    {
+        printf("opção inválida");
+    }
+    return 0;
+}
